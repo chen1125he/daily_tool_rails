@@ -4,7 +4,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby "2.7.2"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
-gem "rails", "~> 7.0.8"
+gem 'rails', '~> 6.0.4.1'
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
@@ -25,13 +25,18 @@ gem "redis", "~> 4.0"
 # gem "bcrypt", "~> 3.1.7"
 
 # Reduces boot times through caching; required in config/boot.rb
-gem "bootsnap", require: false
+gem 'bootsnap', '>= 1.4.2', require: false
 
 # Use Sass to process CSS
 # gem "sassc-rails"
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
+
+group :development, :test do
+  gem 'rspec-rails'
+  gem 'factory_bot_rails', '6.2.0'
+end
 
 group :development do
   gem 'capistrano', '~> 3.10', require: false
@@ -41,9 +46,6 @@ group :development do
   gem 'capistrano-sidekiq', '2.0.0.beta5', require: false
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "web-console"
-
-  gem 'rspec-rails'
-  gem 'factory_bot_rails'
 end
 
 group :test do
