@@ -1,22 +1,24 @@
-source "https://rubygems.org"
+# frozen_string_literal: true
+
+source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby "2.7.2"
+ruby '2.7.2'
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem 'rails', '~> 6.0.4.1'
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
-gem "sprockets-rails"
+gem 'sprockets-rails'
 
 gem 'pg', '>= 0.18', '< 2.0'
 # Use Puma as the app server
 gem 'puma', '~> 5.6.2'
 
-gem "jb"
+gem 'jb'
 
 # Use Redis adapter to run Action Cable in production
-gem "redis", "~> 4.0"
+gem 'redis', '~> 4.0'
 
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"
@@ -38,8 +40,8 @@ gem 'rubocop', require: false
 gem 'rubocop-rspec', require: false
 
 group :development, :test do
-  gem 'rspec-rails'
   gem 'factory_bot_rails', '6.2.0'
+  gem 'rspec-rails'
 end
 
 group :development do
@@ -49,13 +51,12 @@ group :development do
   gem 'capistrano-rbenv', '~> 2.2', require: false
   gem 'capistrano-sidekiq', '2.0.0.beta5', require: false
   # Use console on exceptions pages [https://github.com/rails/web-console]
-  gem "web-console"
+  gem 'web-console'
 end
 
 group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
-  gem "capybara"
-  gem "selenium-webdriver"
-  gem "webdrivers"
-
+  gem 'capybara'
+  gem 'selenium-webdriver'
+  gem 'webdrivers'
 end
