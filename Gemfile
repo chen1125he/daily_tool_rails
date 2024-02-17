@@ -32,6 +32,10 @@ gem 'bootsnap', '>= 1.4.2', require: false
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
+#
+# tools
+gem 'rubocop', require: false
+gem 'rubocop-rspec', require: false
 
 group :development, :test do
   gem 'rspec-rails'
