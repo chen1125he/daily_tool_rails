@@ -36,12 +36,15 @@ gem 'bootsnap', '>= 1.4.2', require: false
 # gem "image_processing", "~> 1.2"
 #
 # tools
+gem 'rswag-api'
+gem 'rswag-ui'
 gem 'rubocop', require: false
 gem 'rubocop-rspec', require: false
 
 group :development, :test do
   gem 'factory_bot_rails', '6.2.0'
   gem 'rspec-rails'
+  gem 'rswag-specs'
 end
 
 group :development do
