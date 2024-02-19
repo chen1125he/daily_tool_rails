@@ -30,6 +30,7 @@ gem 'redis', '~> 4.0'
 gem 'bootsnap', '>= 1.4.2', require: false
 # To prevent warning: already initialized constant Net::ProtocRetryError ...
 gem 'net-http'
+gem 'uri', '0.10.0'
 
 # Use Sass to process CSS
 # gem "sassc-rails"
