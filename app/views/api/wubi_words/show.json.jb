@@ -1,0 +1,8 @@
+# frozen_string_literal: true
+
+{
+  word: @wubi_word.word,
+  code: @wubi_word.code,
+  context: @wubi_word.context,
+  active: @wubi_word.active?
+}
