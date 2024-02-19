@@ -66,6 +66,5 @@ namespace :deploy do
     end
   end
 end
-
-SSHKit.config.command_map[:sidekiq] = 'bundle exec sidekiq'
-SSHKit.config.command_map[:sidekiqctl] = 'bundle exec sidekiqctl'
+# SSHKit.config.command_map[:sidekiq] = 'bundle exec sidekiq'
+# SSHKit.config.command_map[:sidekiqctl] = 'bundle exec sidekiqctl'
