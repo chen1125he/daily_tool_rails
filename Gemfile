@@ -3,7 +3,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.7.2'
+ruby '2.7.4'
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem 'rails', '~> 6.0.4.1'
@@ -28,6 +28,8 @@ gem 'redis', '~> 4.0'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
+# To prevent warning: already initialized constant Net::ProtocRetryError ...
+gem 'net-http'
 
 # Use Sass to process CSS
 # gem "sassc-rails"
@@ -62,4 +64,7 @@ group :test do
   gem 'capybara'
   gem 'selenium-webdriver'
   gem 'webdrivers'
+
+  gem 'faker'
+  gem 'shoulda-matchers', '~> 4.0'
 end
